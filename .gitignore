@@ -40,3 +40,5 @@ app/src/test/
 gradle/
 gradlew
 gradlew.bat
+app/src/main/res/drawable/
+src/main/res/drawable/
