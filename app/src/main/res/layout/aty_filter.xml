@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="teaphy.rxjavademo.AtyFilter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="filter"/>
+        <Button
+            android:id="@+id/btn_take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="take"/>
+        <Button
+            android:id="@+id/btn_takeFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="takeFirst"/>
+
+        <Button
+            android:id="@+id/btn_takeLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="takeLast"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_distinct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="distinct"/>
+        <Button
+            android:id="@+id/btn_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first"/>
+        <Button
+            android:id="@+id/btn_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skip"/>
+        <Button
+            android:id="@+id/btn_skipLst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skipLast"/>
+        <Button
+            android:id="@+id/btn_elementAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="btn_elementAt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_sampling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sampling"/>
+        <Button
+            android:id="@+id/btn_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timeout"/>
+        <Button
+            android:id="@+id/btn_debounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="debounce"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_distinctUntilChanged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="distinctUntilChanged"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
